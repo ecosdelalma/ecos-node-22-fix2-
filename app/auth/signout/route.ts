@@ -1,1 +1,1 @@
-import { NextResponse } from 'next/server'; import { createServer } from '@/lib/supabaseClient'; export async function POST(request:Request){ const s=createServer(); await s.auth.signOut(); return NextResponse.redirect(new URL('/', request.url)); }
+import { NextResponse } from 'next/server'; import { createServer } from '@/lib/supabaseserver'; export async function POST(request:Request){ const s=createServer(); await s.auth.signOut(); return NextResponse.redirect(new URL('/', request.url)); }
