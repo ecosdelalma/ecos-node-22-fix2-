@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { createServer } from '@/lib/supabaseClient';
+import { createServer } from '@/lib/supabaseserver';
 export async function GET(request:Request){
   const s=createServer();
   const {data,error}=await s.auth.signInWithOAuth({provider:'google',options:{redirectTo:new URL('/dashboard', request.url).toString()}});
