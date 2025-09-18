@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { createServer } from '@/lib/supabaseClient';
+import { createServer } from '@/lib/supabaseserver';
 export async function POST(request:Request){
   const f=await request.formData();
   const email=String(f.get('email')||'');
