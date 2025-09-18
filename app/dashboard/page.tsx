@@ -1,0 +1,1 @@
+export default function Dashboard(){return(<section className='mt-10 grid gap-6'><div className='card'><h2 className='text-2xl mb-2 lowercase'>universo</h2><p className='text-white/70'>Tu constelación te espera.</p></div></section>);}

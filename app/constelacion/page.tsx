@@ -1,0 +1,1 @@
+import ConstellationGraph from '@/components/ConstellationGraph'; export default function ConstelacionPage(){return(<section className='mt-10 grid gap-6'><div className='card'><h2 className='text-2xl mb-2 lowercase'>menú constelación</h2><p className='text-white/70'>Explora los nodos.</p></div><ConstellationGraph/></section>);}
